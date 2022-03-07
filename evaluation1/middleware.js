@@ -7,10 +7,10 @@ app.get("/books",(req,res)=>{
     return res.send({ route: "/books"})
 })
 app.get("/libraries",checkPermission,(req,res)=>{
-    return res.send({ route: "/libraries", permission: true})
+    return res.send({ route: "/libraries", permission: req.permission})
 })
 app.get("/authors",checkPermission,(req,res)=>{
-    return res.send({ route: "/authors", permission: true})
+    return res.send({ route: "/authors", permission: req.permission})
 })
 
 
@@ -31,9 +31,11 @@ var checkpermission=true;
 function checkPermission(req,res,next){
     if(req.path=="/authors"){
         console.log("authors")
+        req.permission=true;
     }
     if(req.path=="/libraries"){
         console.log("libraries")
+        req.permission=true;
     }
    console.log("check")
     
