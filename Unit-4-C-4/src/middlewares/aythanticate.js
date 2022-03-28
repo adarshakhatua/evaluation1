@@ -1,5 +1,5 @@
 const { promise } = require("bcrypt/promises");
-
+const jwt = require('jsonwebtoken');
 const verifyToken=(token)=>{
     return new Promise((resolve,reject)=>{
         jwt.verify(token, process.env.KEY, function(err, decoded) {
