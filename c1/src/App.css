@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+  /* border: 1px solid black; */
+}
+h3{
+  color: teal;
+  font-size: 200%;
+}
+#score-div,#wicket-div,#over-div{
+  /* border: 1px solid black; */
+  width: 200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#score-div{
+  position: absolute;
+  left:300px
+}
+#wicket-div{
+  position: absolute;
+  left:300px;
+  top:300px
+}
+#over-div{
+  position: absolute;
+  left:300px;
+  top:450px
+}
+.addScore,.addWicket,.addBall{
+  /* border: 1px solid black; */
+  width: 500px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.addScore{
+  position: absolute;
+  left:700px;
+  top: 150px;
+}
+.addWicket{
+  position: absolute;
+  left:700px;
+  top: 290px;
+}
+.addBall{
+  position: absolute;
+  left:700px;
+  top: 450px;
+}
+button{
+  background-color: aqua;
+  width: 120px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 125, 125);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.msg{
+  /* border: 1px solid black; */
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  position: absolute;
+  border-radius: 15px;
+  top: 650px;
+  left: 50px;
+}
+.msg1{
+  display: none;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
