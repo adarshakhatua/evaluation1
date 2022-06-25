@@ -1,0 +1,46 @@
+.card{
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 8px;
+    height: 250px;
+    width:600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+input{
+    margin: 20px 50px;
+}
+#outerDiv{
+    border: 1px solid rgb(237, 237, 237);
+    width: 688px;
+    height: 480px;
+    overflow: hidden;
+    margin: 20px 50px;
+}
+.imgDiv{
+    height: 100%;
+    width: 250px;
+    border: 1px solid rgb(211, 211, 211);
+}
+.imgDiv img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.contentDiv{
+    /* border: 1px solid black; */
+    width: 350px;
+    text-align: left;
+    height: 200px;
+    padding-left: 10px;
+    color: rgb(9, 123, 123);
+}
+p:first-child{
+    font-size: 30px;
+}
+p:last-child{
+    font-size: 20px;
+    color: rgb(36, 42, 42);
+}
