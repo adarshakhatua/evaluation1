@@ -1,0 +1,19 @@
+#box{
+    border: 1px solid rgb(179, 179, 179);
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    font-size: 25px;
+    overflow: scroll;
+}
+#input{
+    margin: auto;
+    padding: 5px;
+    /* border: 1px solid black; */
+    width: 180px;
+}
+h1{
+    margin: auto;
+    /* border: 1px solid black; */
+    width: 120px;
+}
